@@ -10,7 +10,7 @@ $titulo = $_POST['titolo'];
 $asign = $_POST['atribudato'];
 $entrg = $_POST['liverdato'];
 $subj = $_POST['subjekto'];
-$entregada = isset($_POST['liverita'])? "true" : "false";
+$entregada = isset($_POST['liverita'])? 1 : 0;
 
 $query->bindParam(1, $titulo);
 $query->bindParam(2, $asign);
@@ -31,7 +31,7 @@ echo $query->queryString . "<br>";
 // $result = false;
 
 if ($result) {
-    header("Location: seleccionar.php");
+    //header("Location: seleccionar.php");
 }
 else {
     echo "Tas bien  wey.";

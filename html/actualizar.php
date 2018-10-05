@@ -16,7 +16,7 @@ $titulo = $_POST['titolo'];
 $asign = $_POST['atribudato'];
 $entrg = $_POST['liverdato'];
 $subj = $_POST['subjekto'];
-$entregada = isset($_POST['liverita'])? "true" : "false";
+$entregada = isset($_POST['liverita'])? 1 : 0;
 
 $query->bindParam(1, $titulo);
 $query->bindParam(2, $asign);

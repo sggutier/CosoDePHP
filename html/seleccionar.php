@@ -28,7 +28,7 @@ try {
       <td><?php echo($r['fecha_asignacion']) ?></td>
       <td><?php echo($r['fecha_entrega']) ?></td>
       <td><?php echo($r['asignatura']) ?></td>
-      <td><?php echo($r['entregada']) ?></td>
+      <td><?php echo($r['entregada']==1? "Si" : "No") ?></td>
         <td><a href='editar.php?id=<?php echo($r["id"]) ?>'>Actualizar</a></td>
         <td><a href="eliminar.php?id=<?php echo($r["id"]) ?>">Eliminar</a></td>
     </tr>
