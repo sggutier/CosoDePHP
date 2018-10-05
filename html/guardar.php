@@ -31,7 +31,7 @@ echo $query->queryString . "<br>";
 // $result = false;
 
 if ($result) {
-    echo "Operación exitosa.";
+    header("Location: seleccionar.php");
 }
 else {
     echo "Tas bien  wey.";

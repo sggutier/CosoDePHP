@@ -25,13 +25,13 @@ $query->bindParam(4, $subj);
 $query->bindParam(5, $entregada);
 $query->bindParam(6, $id);
 
-echo $id . "<br>";
-echo $titulo . "<br>";
-echo $asign  . "<br>";
-echo $entrg  . "<br>";
-echo $subj  . "<br>";
-echo $entregada  . "<br>";
-echo $query->queryString . "<br>";
+//echo $id . "<br>";
+//echo $titulo . "<br>";
+//echo $asign  . "<br>";
+//echo $entrg  . "<br>";
+//echo $subj  . "<br>";
+//echo $entregada  . "<br>";
+//echo $query->queryString . "<br>";
 
 
 
@@ -39,7 +39,7 @@ $result = $query->execute();
 // $result = false;
 
 if ($result) {
-    echo "Operación exitosa.";
+    header("Location: seleccionar.php");
 }
 else {
     echo "Tas bien  wey.";
