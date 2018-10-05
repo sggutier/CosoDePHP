@@ -26,16 +26,16 @@
           echo "<br>Asignatura: " . $row['asignatura'];
           echo "<br>Entregada: " . $row['entregada']; ?>
 
-          <form action="editar.php" method="post">
-              <?php
-              //echo $row."<br><br>";
-              foreach ($row as $a => $b) {
-                  echo '<input type="hidden" name="' . $a . '" value="' . $b . '">';
-//              echo $a." >> ".$b."<br>";
-              }
-              //?>
-              <input type="submit" value="Actualizar">
-          </form>
+<!--          <form action="editar.php" method="post">-->
+<!--              --><?php
+//              //echo $row."<br><br>";
+//              foreach ($row as $a => $b) {
+//                  echo '<input type="hidden" name="' . $a . '" value="' . $b . '">';
+////              echo $a." >> ".$b."<br>";
+//              }
+//              //?>
+<!--              <input type="submit" value="Actualizar">-->
+<!--          </form>-->
           <?php
       }
       echo "<br><a href='seleccionarId.php'>Regresar</a>";
